@@ -5,11 +5,7 @@ import numpy as np
 import random 
 import seaborn as sns
 import sys
-if len(sys.argv) < 2:
-    print("Error: Please enter the number of iterations as a command line argument.")
-    num_iterations = int(input("Enter the number of iterations: "))
-else:
-    num_iterations = int(sys.argv[1])
+
 
 # use list comprehension to create a list of rolls of a six-sided die
 rolls = [random.randrange(1, 7) for i in range(int(sys.argv[1]))]
